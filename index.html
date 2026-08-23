@@ -9,31 +9,18 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Dinesh | Cybersecurity Student | Web Developer | Portfolio">
+          content="Dinesh - Personal Portfolio, Life Blog, Travel, Projects and Skills">
 
-    <meta name="keywords"
-          content="Dinesh, Cybersecurity, Web Developer, Portfolio, Python, Linux">
+    <title>Dinesh | My Life & Journey</title>
 
-    <meta name="author"
-          content="Dinesh">
-
-    <title>Dinesh — Portfolio</title>
-
-
-    <!-- GOOGLE FONTS -->
-
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect"
           href="https://fonts.gstatic.com"
           crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
-
-
-    <!-- CSS -->
 
     <link rel="stylesheet"
           href="style.css">
@@ -43,63 +30,25 @@
 
 <body>
 
-
 <!-- =====================================================
-     LOADING SCREEN
-===================================================== -->
-
-<div id="loader">
-
-    <div class="loader-logo">
-
-        D<span>.</span>
-
-    </div>
-
-    <div class="loader-line">
-
-        <span></span>
-
-    </div>
-
-    <p>
-        INITIALIZING PORTFOLIO...
-    </p>
-
-</div>
-
-
-
-<!-- =====================================================
-     BACKGROUND
+     ANIMATED BACKGROUND
 ===================================================== -->
 
 <div class="background">
 
-    <div class="noise"></div>
+    <div class="gradient-orb orb-1"></div>
 
-    <div class="grid"></div>
+    <div class="gradient-orb orb-2"></div>
 
-    <div class="orb orb-one"></div>
+    <div class="gradient-orb orb-3"></div>
 
-    <div class="orb orb-two"></div>
+    <div class="grid-background"></div>
 
-    <div class="orb orb-three"></div>
+    <canvas id="particleCanvas"></canvas>
 
-    <canvas id="particles"></canvas>
+    <div id="mouseGlow"></div>
 
 </div>
-
-
-
-<!-- =====================================================
-     CUSTOM CURSOR
-===================================================== -->
-
-<div class="cursor-dot"></div>
-
-<div class="cursor-ring"></div>
-
 
 
 <!-- =====================================================
@@ -110,90 +59,61 @@
 
     <div class="nav-container">
 
-
-        <!-- LOGO -->
-
-        <a href="#home"
-           class="logo">
-
-            Dinesh<span>.</span>
-
+        <a href="#home" class="logo">
+            D<span>.</span>
         </a>
 
 
-
-        <!-- NAVIGATION -->
-
         <nav id="navMenu">
 
-            <a href="#home"
-               class="nav-link active">
-
+            <a href="#home" class="nav-link active">
                 Home
-
             </a>
 
-
-            <a href="#about"
-               class="nav-link">
-
+            <a href="#about" class="nav-link">
                 About
-
             </a>
 
-
-            <a href="#education"
-               class="nav-link">
-
-                Education
-
+            <a href="#journey" class="nav-link">
+                Journey
             </a>
 
-
-            <a href="#skills"
-               class="nav-link">
-
-                Skills
-
+            <a href="#travel" class="nav-link">
+                Travel
             </a>
 
-
-            <a href="#projects"
-               class="nav-link">
-
+            <a href="#projects" class="nav-link">
                 Projects
-
             </a>
 
-
-            <a href="#experience"
-               class="nav-link">
-
-                Experience
-
+            <a href="#skills" class="nav-link">
+                Skills
             </a>
 
+            <a href="#blog" class="nav-link">
+                Blog
+            </a>
 
-            <a href="#contact"
-               class="nav-link">
-
+            <a href="#contact" class="nav-link">
                 Contact
-
             </a>
 
         </nav>
 
 
+        <div class="nav-actions">
 
-        <!-- MOBILE MENU -->
+            <button id="themeToggle"
+                    class="theme-btn">
+                ☀️
+            </button>
 
-        <button id="menuBtn"
-                class="menu-btn"
-                aria-label="Open menu">
+            <button id="menuToggle"
+                    class="menu-btn">
+                ☰
+            </button>
 
-            ☰
-
-        </button>
+        </div>
 
     </div>
 
@@ -202,129 +122,98 @@
 
 
 <!-- =====================================================
-     HOME
+     HERO
 ===================================================== -->
 
-<section id="home"
-         class="hero">
-
+<section id="home" class="hero">
 
     <div class="hero-container">
 
+        <div class="hero-content reveal">
 
-        <!-- HERO LEFT -->
+            <div class="status-badge">
 
-        <div class="hero-left reveal">
+                <span class="status-dot"></span>
 
-
-            <div class="availability">
-
-                <span></span>
-
-                Available for opportunities
+                Exploring • Building • Learning
 
             </div>
 
 
-            <p class="eyebrow">
-
-                HELLO, I'M
-
+            <p class="small-title">
+                WELCOME TO MY WORLD
             </p>
 
 
             <h1>
 
-                Dinesh
+                Hi, I'm
 
-                <span class="gradient-text">
-                    .
-                </span>
+                <span>Dinesh</span>
 
             </h1>
 
 
-            <div class="typing-container">
+            <h2>
 
-                <span>
-                    I am a
-                </span>
+                Student
 
-                <span id="typingText">
-                    Cybersecurity Student
-                </span>
+                <span class="separator">•</span>
 
-            </div>
+                Developer
+
+                <span class="separator">•</span>
+
+                Cybersecurity Enthusiast
+
+            </h2>
 
 
             <p class="hero-description">
 
-                I build digital experiences,
-                explore cybersecurity and
-                document my journey through
-                technology, projects and
-                continuous learning.
+                This is my digital journal where I share
+                my life, travel experiences, projects,
+                skills and everything I learn along
+                my journey.
 
             </p>
 
 
             <div class="hero-buttons">
 
+                <a href="#about"
+                   class="primary-btn">
+
+                    Explore My Journey
+
+                    <span>→</span>
+
+                </a>
+
 
                 <a href="#projects"
-                   class="btn primary">
+                   class="secondary-btn">
 
-                    Explore Projects
-
-                    <span>↗</span>
+                    View Projects
 
                 </a>
-
-
-                <a href="#contact"
-                   class="btn secondary">
-
-                    Let's Connect
-
-                </a>
-
 
             </div>
 
 
+            <div class="social-links">
 
-            <!-- SOCIAL LINKS -->
-
-            <div class="social-row">
-
-
-                <a href="https://github.com/dineshh07"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="social">
-
-                    GH
-
+                <a href="#">
+                    GitHub
                 </a>
 
-
-                <a href="https://www.linkedin.com/in/dinesh-r-12555a430"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   class="social">
-
-                    IN
-
+                <a href="#">
+                    LinkedIn
                 </a>
 
-
-                <a href="#contact"
-                   class="social">
-
-                    ✉
-
+                <a href="#">
+                    Instagram
                 </a>
-
 
             </div>
 
@@ -332,80 +221,14 @@
 
 
 
-        <!-- HERO RIGHT -->
+        <div class="hero-image reveal">
 
-        <div class="hero-right reveal">
+            <div class="profile-glow"></div>
 
+            <div class="image-circle">
 
-            <div class="hero-orbit orbit-a"></div>
-
-            <div class="hero-orbit orbit-b"></div>
-
-            <div class="hero-orbit orbit-c"></div>
-
-
-
-            <div class="profile-container">
-
-
-                <div class="profile-glow"></div>
-
-
-                <div class="profile-image">
-
-                    <img src="images/profile.jpg"
-                         alt="Dinesh">
-
-                </div>
-
-
-
-                <!-- FLOATING CARD -->
-
-                <div class="floating-card card-top">
-
-                    <span>
-                        ⚡
-                    </span>
-
-                    <div>
-
-                        <small>
-                            Currently
-                        </small>
-
-                        <strong>
-                            Learning
-                        </strong>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- FLOATING CARD -->
-
-                <div class="floating-card card-bottom">
-
-                    <span>
-                        🛡️
-                    </span>
-
-                    <div>
-
-                        <small>
-                            Focus
-                        </small>
-
-                        <strong>
-                            Cyber Security
-                        </strong>
-
-                    </div>
-
-                </div>
-
+                <img src="images/profile.jpg"
+                     alt="Dinesh">
 
             </div>
 
@@ -414,76 +237,13 @@
     </div>
 
 
-
-    <!-- HERO STATS -->
-
-    <div class="hero-stats">
-
-
-        <div class="stat">
-
-            <strong data-count="3">
-                0
-            </strong>
-
-            <span>
-                Projects
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong data-count="8">
-                0
-            </strong>
-
-            <span>
-                Technologies
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong data-count="1">
-                0
-            </strong>
-
-            <span>
-                Year Journey
-            </span>
-
-        </div>
-
-
-        <div class="stat">
-
-            <strong>
-                ∞
-            </strong>
-
-            <span>
-                Curiosity
-            </span>
-
-        </div>
-
-
-    </div>
-
-
-
-    <div class="scroll-down">
+    <div class="scroll-indicator">
 
         <span></span>
 
-        SCROLL TO EXPLORE
+        Scroll to explore
 
     </div>
-
 
 </section>
 
@@ -496,408 +256,127 @@
 <section id="about"
          class="section">
 
-
     <div class="container">
 
+        <div class="section-heading reveal">
 
-        <div class="section-header reveal">
-
-
-            <span class="section-number">
-                01
-            </span>
-
-
-            <div>
-
-                <p>
-                    GET TO KNOW ME
-                </p>
-
-                <h2>
-
-                    About
-                    <span>me</span>
-
-                </h2>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="about-layout">
-
-
-            <!-- ABOUT CONTENT -->
-
-            <div class="about-main reveal">
-
-
-                <span class="quote-mark">
-                    “
-                </span>
-
-
-                <h3>
-
-                    I believe every project
-                    is an opportunity to
-                    <span>learn something new.</span>
-
-                </h3>
-
-
-                <p>
-
-                    I'm a Cybersecurity student
-                    interested in technology,
-                    web development, Linux,
-                    programming and security.
-
-                </p>
-
-
-                <p>
-
-                    I enjoy taking ideas and
-                    turning them into real,
-                    functional projects. This
-                    portfolio is a record of that
-                    journey.
-
-                </p>
-
-
-                <div class="about-line"></div>
-
-
-                <span class="signature">
-                    Dinesh.
-                </span>
-
-
-            </div>
-
-
-
-            <!-- ABOUT CARDS -->
-
-            <div class="about-cards">
-
-
-                <div class="glass-card tilt reveal">
-
-
-                    <div class="card-number">
-                        01
-                    </div>
-
-
-                    <div class="card-icon">
-                        ◈
-                    </div>
-
-
-                    <h3>
-                        Cybersecurity
-                    </h3>
-
-
-                    <p>
-
-                        Exploring ethical hacking,
-                        networking, Linux and
-                        security concepts.
-
-                    </p>
-
-
-                </div>
-
-
-
-                <div class="glass-card tilt reveal">
-
-
-                    <div class="card-number">
-                        02
-                    </div>
-
-
-                    <div class="card-icon">
-                        ◇
-                    </div>
-
-
-                    <h3>
-                        Development
-                    </h3>
-
-
-                    <p>
-
-                        Building responsive websites
-                        and interactive applications.
-
-                    </p>
-
-
-                </div>
-
-
-
-                <div class="glass-card tilt reveal">
-
-
-                    <div class="card-number">
-                        03
-                    </div>
-
-
-                    <div class="card-icon">
-                        ◎
-                    </div>
-
-
-                    <h3>
-                        Problem Solving
-                    </h3>
-
-
-                    <p>
-
-                        Learning by experimenting,
-                        breaking things and rebuilding.
-
-                    </p>
-
-
-                </div>
-
-
-
-                <div class="glass-card tilt reveal">
-
-
-                    <div class="card-number">
-                        04
-                    </div>
-
-
-                    <div class="card-icon">
-                        ✦
-                    </div>
-
-
-                    <h3>
-                        Creativity
-                    </h3>
-
-
-                    <p>
-
-                        Turning simple ideas into
-                        unique digital experiences.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     ACADEMIC PASSPORT
-===================================================== -->
-
-<section id="education"
-         class="academic-section">
-
-
-    <div class="academic-container">
-
-
-        <!-- HEADER -->
-
-        <div class="academic-header reveal">
-
-
-            <p class="academic-eyebrow">
-
-                ACADEMIC PASSPORT
-
+            <p class="small-title">
+                ABOUT ME
             </p>
 
-
             <h2>
-
-                Verified Learning Records
-
+                A little about
+                <span>me</span>
             </h2>
-
 
         </div>
 
 
+        <div class="about-grid">
 
-        <!-- EDUCATION CARDS -->
+            <div class="about-text reveal">
 
-        <div class="academic-grid">
+                <p>
+                    I'm Dinesh, a student passionate about
+                    technology, cybersecurity, web development
+                    and creating digital projects.
+                </p>
 
+                <p>
+                    I'm constantly learning new technologies,
+                    experimenting with ideas and building
+                    projects that help me improve.
+                </p>
 
-            <!-- B.E -->
-
-            <div class="academic-card active-card reveal">
-
-
-                <div class="academic-icon">
-
-                    🎓
-
-                </div>
-
-
-                <h3>
-
-                    B.E Cyber Security
-
-                </h3>
-
-
-                <p class="academic-school">
-
-                    SRM Valliammai Engineering College
-
+                <p>
+                    This website is my personal digital
+                    journal — a place to document the
+                    journey rather than just the destination.
                 </p>
 
 
-                <div class="academic-year">
+                <div class="quote-box">
 
-                    2025 - Present
+                    <span>"</span>
 
-                </div>
-
-
-                <div class="academic-status pursuing">
-
-                    <span>
-                        🟢
-                    </span>
-
-                    Pursuing
+                    Build. Learn. Explore. Repeat.
 
                 </div>
-
 
             </div>
 
 
 
-            <!-- 12TH -->
+            <div class="about-cards reveal">
 
-            <div class="academic-card reveal">
+                <div class="info-card">
 
+                    <div class="card-icon">
+                        🎓
+                    </div>
 
-                <div class="academic-icon">
+                    <h3>
+                        Education
+                    </h3>
 
-                    🎓
-
-                </div>
-
-
-                <h3>
-
-                    Higher Secondary
-
-                </h3>
-
-
-                <p class="academic-school">
-
-                    Shree Niketan Matric Hr. Sec. School
-
-                </p>
-
-
-                <div class="academic-year">
-
-                    2025
+                    <p>
+                        BE Cyber Security
+                    </p>
 
                 </div>
 
 
-                <div class="academic-status marks">
+                <div class="info-card">
 
-                    <span>
-                        ⭐
-                    </span>
+                    <div class="card-icon">
+                        💻
+                    </div>
 
-                    498 / 600 — 83%
+                    <h3>
+                        Focus
+                    </h3>
+
+                    <p>
+                        Cybersecurity & Development
+                    </p>
 
                 </div>
 
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        🚀
+                    </div>
+
+                    <h3>
+                        Goal
+                    </h3>
+
+                    <p>
+                        Build meaningful projects
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="card-icon">
+                        🌎
+                    </div>
+
+                    <h3>
+                        Explore
+                    </h3>
+
+                    <p>
+                        Travel & experiences
+                    </p>
+
+                </div>
 
             </div>
-
-
-
-            <!-- 10TH -->
-
-            <div class="academic-card reveal">
-
-
-                <div class="academic-icon">
-
-                    🏫
-
-                </div>
-
-
-                <h3>
-
-                    Secondary School
-
-                </h3>
-
-
-                <p class="academic-school">
-
-                   Chinni Sriramulu Chetty Vivekananda Vidyalaya Matric  School
-
-                </p>
-
-
-                <div class="academic-year">
-
-                    2023
-
-                </div>
-
-
-                <div class="academic-status marks">
-
-                    <span>
-                        ⭐
-                    </span>
-
-                    388 / 500 — 77.6%
-
-                </div>
-
-
-            </div>
-
 
         </div>
 
@@ -908,266 +387,254 @@
 
 
 <!-- =====================================================
-     SKILLS
+     JOURNEY
 ===================================================== -->
 
-<section id="skills"
-         class="section skills-section">
-
+<section id="journey"
+         class="section">
 
     <div class="container">
 
+        <div class="section-heading reveal">
 
-        <div class="section-header reveal">
+            <p class="small-title">
+                MY JOURNEY
+            </p>
+
+            <h2>
+                My story so
+                <span>far</span>
+            </h2>
+
+        </div>
 
 
-            <span class="section-number">
-                02
-            </span>
+        <div class="timeline">
 
 
-            <div>
+            <div class="timeline-item reveal">
 
-                <p>
-                    WHAT I WORK WITH
-                </p>
+                <div class="timeline-dot"></div>
 
-                <h2>
+                <div class="timeline-content">
 
-                    My
-                    <span>skills</span>
+                    <span class="timeline-date">
+                        2026
+                    </span>
 
-                </h2>
+                    <h3>
+                        Started My Cybersecurity Journey
+                    </h3>
+
+                    <p>
+                        Started exploring cybersecurity,
+                        programming, Linux and web technologies.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2026
+                    </span>
+
+                    <h3>
+                        Started Building Websites
+                    </h3>
+
+                    <p>
+                        Started learning HTML, CSS and
+                        JavaScript and building websites.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        2026
+                    </span>
+
+                    <h3>
+                        Built Real Projects
+                    </h3>
+
+                    <p>
+                        Started creating projects such as
+                        MP Frames and other web applications.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        FUTURE
+                    </span>
+
+                    <h3>
+                        More Adventures Ahead
+                    </h3>
+
+                    <p>
+                        The journey has only just begun.
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
+    </div>
+
+</section>
 
 
-        <div class="skills-layout">
+
+<!-- =====================================================
+     TRAVEL
+===================================================== -->
+
+<section id="travel"
+         class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="small-title">
+                TRAVEL
+            </p>
+
+            <h2>
+                Places I've
+                <span>explored</span>
+            </h2>
+
+        </div>
 
 
-            <!-- SKILL ORBIT -->
-
-            <div class="skill-orbit-area reveal">
+        <div class="travel-grid">
 
 
-                <div class="skill-orbit orbit-one"></div>
+            <article class="travel-card reveal">
 
-                <div class="skill-orbit orbit-two"></div>
+                <div class="card-image">
 
-                <div class="skill-orbit orbit-three"></div>
+                    <img src="images/travel1.jpg"
+                         alt="Travel">
+
+                    <div class="image-overlay"></div>
+
+                </div>
 
 
-                <div class="skill-center">
+                <div class="travel-info">
 
-                    <span>
-                        TECH
+                    <span class="location">
+                        📍 Tamil Nadu
                     </span>
 
-                    <strong>
-                        STACK
-                    </strong>
+                    <h3>
+                        A Memorable Journey
+                    </h3>
+
+                    <p>
+                        One of my memorable travel
+                        experiences.
+                    </p>
+
+                    <button class="read-btn">
+                        Read Story →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="travel-card reveal">
+
+                <div class="card-image">
+
+                    <img src="images/travel2.jpg"
+                         alt="Travel">
+
+                    <div class="image-overlay"></div>
 
                 </div>
 
 
-                <div class="skill-icon icon-one">
-                    HTML
+                <div class="travel-info">
+
+                    <span class="location">
+                        📍 Add Location
+                    </span>
+
+                    <h3>
+                        Another Adventure
+                    </h3>
+
+                    <p>
+                        Add your next travel story here.
+                    </p>
+
+                    <button class="read-btn">
+                        Read Story →
+                    </button>
+
                 </div>
 
-
-                <div class="skill-icon icon-two">
-                    CSS
-                </div>
-
-
-                <div class="skill-icon icon-three">
-                    JS
-                </div>
-
-
-                <div class="skill-icon icon-four">
-                    PY
-                </div>
-
-
-                <div class="skill-icon icon-five">
-                    LINUX
-                </div>
-
-
-                <div class="skill-icon icon-six">
-                    GIT
-                </div>
-
-
-            </div>
+            </article>
 
 
 
-            <!-- SKILL BARS -->
+            <article class="travel-card travel-empty reveal">
 
-            <div class="skills-list reveal">
+                <div>
 
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            HTML / CSS
-                        </span>
-
-                        <span>
-                            90%
-                        </span>
-
+                    <div class="big-icon">
+                        ✈️
                     </div>
 
+                    <h3>
+                        More adventures coming...
+                    </h3>
 
-                    <div class="skill-track">
-
-                        <span data-width="90%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            JavaScript
-                        </span>
-
-                        <span>
-                            75%
-                        </span>
-
-                    </div>
-
-
-                    <div class="skill-track">
-
-                        <span data-width="75%">
-                        </span>
-
-                    </div>
+                    <p>
+                        Every journey becomes a story.
+                    </p>
 
                 </div>
 
-
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            Python
-                        </span>
-
-                        <span>
-                            70%
-                        </span>
-
-                    </div>
-
-
-                    <div class="skill-track">
-
-                        <span data-width="70%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            Linux
-                        </span>
-
-                        <span>
-                            70%
-                        </span>
-
-                    </div>
-
-
-                    <div class="skill-track">
-
-                        <span data-width="70%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            Git / GitHub
-                        </span>
-
-                        <span>
-                            75%
-                        </span>
-
-                    </div>
-
-
-                    <div class="skill-track">
-
-                        <span data-width="75%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="skill-row">
-
-                    <div class="skill-info">
-
-                        <span>
-                            Cybersecurity
-                        </span>
-
-                        <span>
-                            65%
-                        </span>
-
-                    </div>
-
-
-                    <div class="skill-track">
-
-                        <span data-width="65%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-            </div>
+            </article>
 
         </div>
 
@@ -1184,421 +651,153 @@
 <section id="projects"
          class="section">
 
-
     <div class="container">
 
+        <div class="section-heading reveal">
 
-        <div class="section-header reveal">
+            <p class="small-title">
+                PROJECTS
+            </p>
 
-
-            <span class="section-number">
-                03
-            </span>
-
-
-            <div>
-
-                <p>
-                    THINGS I'VE BUILT
-                </p>
-
-                <h2>
-
-                    Selected
-                    <span>projects</span>
-
-                </h2>
-
-            </div>
+            <h2>
+                Things I've
+                <span>built</span>
+            </h2>
 
         </div>
 
 
+        <div class="projects-grid">
 
-        <div class="projects">
 
-
-            <!-- =================================================
-                 PROJECT 01 — MP FRAMES
-            ================================================== -->
-
-            <article class="project reveal">
-
+            <article class="project-card reveal">
 
                 <div class="project-image">
-
 
                     <img src="images/project1.jpg"
                          alt="MP Frames">
 
-
-                    <div class="project-overlay">
-
-
-                        <a href="https://mp-frames.vercel.app/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-view-btn">
-
-                            VIEW PROJECT ↗
-
-                        </a>
-
-
+                    <div class="project-number">
+                        01
                     </div>
-
 
                 </div>
 
 
-
-                <div class="project-info">
-
-
-                    <div class="project-meta">
-
-
-                        <span>
-                            01 / 2026
-                        </span>
-
-
-                        <span>
-                            WEB DEVELOPMENT
-                        </span>
-
-
-                    </div>
-
-
+                <div class="project-content">
 
                     <h3>
                         MP Frames
                     </h3>
 
-
-
                     <p>
-
-                        A modern photo-frame
-                        e-commerce website with
-                        product showcase,
-                        categories, product details
-                        and customer ordering.
-
+                        A photo frame business website
+                        with products, cart and checkout
+                        functionality.
                     </p>
 
 
+                    <div class="tech-stack">
 
-                    <div class="tags">
+                        <span>HTML</span>
 
+                        <span>CSS</span>
 
-                        <span>
-                            HTML
-                        </span>
+                        <span>JavaScript</span>
 
-
-                        <span>
-                            CSS
-                        </span>
-
-
-                        <span>
-                            JavaScript
-                        </span>
-
-
-                        <span>
-                            Firebase
-                        </span>
-
-
-                        <span>
-                            Vercel
-                        </span>
-
+                        <span>Firebase</span>
 
                     </div>
 
 
+                    <a href="#"
+                       class="project-link">
 
-                    <div class="project-buttons">
+                        View Project
+                        →
 
-
-                        <a href="https://mp-frames.vercel.app/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn primary">
-
-                            LIVE WEBSITE
-
-                            <span>
-                                ↗
-                            </span>
-
-                        </a>
-
-
-                    </div>
-
+                    </a>
 
                 </div>
-
 
             </article>
 
 
 
-            <!-- =================================================
-                 PROJECT 02 — DINESH FASHION
-            ================================================== -->
-
-            <article class="project reverse reveal">
-
+            <article class="project-card reveal">
 
                 <div class="project-image">
-
 
                     <img src="images/project2.jpg"
-                         alt="Dinesh Fashion">
+                         alt="Cybersecurity Project">
 
-
-                    <div class="project-overlay">
-
-
-                        <a href="https://dineshh07.github.io/dinesh-fashion/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-view-btn">
-
-                            VIEW PROJECT ↗
-
-                        </a>
-
-
+                    <div class="project-number">
+                        02
                     </div>
-
 
                 </div>
 
 
-
-                <div class="project-info">
-
-
-                    <div class="project-meta">
-
-
-                        <span>
-                            02 / 2026
-                        </span>
-
-
-                        <span>
-                            WEB DEVELOPMENT
-                        </span>
-
-
-                    </div>
-
-
+                <div class="project-content">
 
                     <h3>
-                        Dinesh Fashion
+                        Cybersecurity Project
                     </h3>
 
-
-
                     <p>
-
-                        A fashion e-commerce
-                        website designed to showcase
-                        products with a clean,
-                        responsive and interactive
-                        shopping experience.
-
+                        Add your cybersecurity project
+                        description here.
                     </p>
 
 
+                    <div class="tech-stack">
 
-                    <div class="tags">
+                        <span>Linux</span>
 
+                        <span>Python</span>
 
-                        <span>
-                            HTML
-                        </span>
-
-
-                        <span>
-                            CSS
-                        </span>
-
-
-                        <span>
-                            JavaScript
-                        </span>
-
-
-                        <span>
-                            E-Commerce
-                        </span>
-
+                        <span>Security</span>
 
                     </div>
 
 
+                    <a href="#"
+                       class="project-link">
 
-                    <div class="project-buttons">
+                        View Project
+                        →
 
-
-                        <a href="https://dineshh07.github.io/dinesh-fashion/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn primary">
-
-                            LIVE WEBSITE
-
-                            <span>
-                                ↗
-                            </span>
-
-                        </a>
-
-
-                    </div>
-
+                    </a>
 
                 </div>
-
 
             </article>
 
 
 
-            <!-- =================================================
-                 PROJECT 03 — RESUME
-            ================================================== -->
+            <article class="project-card project-placeholder reveal">
 
-            <article class="project reveal">
+                <div class="project-content">
 
-
-                <div class="project-image">
-
-
-                    <img src="images/project3.jpg"
-                         alt="Dinesh Resume">
-
-
-                    <div class="project-overlay">
-
-
-                        <a href="resume.pdf"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="project-view-btn">
-
-                            VIEW RESUME ↗
-
-                        </a>
-
-
+                    <div class="coming-icon">
+                        +
                     </div>
-
-
-                </div>
-
-
-
-                <div class="project-info">
-
-
-                    <div class="project-meta">
-
-
-                        <span>
-                            03 / 2026
-                        </span>
-
-
-                        <span>
-                            RESUME
-                        </span>
-
-
-                    </div>
-
-
 
                     <h3>
-                        My Resume
+                        Your Next Project
                     </h3>
 
-
-
                     <p>
-
-                        My professional resume
-                        showcasing my education,
-                        technical skills, projects,
-                        cybersecurity interests
-                        and learning journey.
-
+                        Something new is always being built.
                     </p>
 
-
-
-                    <div class="tags">
-
-
-                        <span>
-                            Cybersecurity
-                        </span>
-
-
-                        <span>
-                            Web Development
-                        </span>
-
-
-                        <span>
-                            Python
-                        </span>
-
-
-                        <span>
-                            Linux
-                        </span>
-
-
-                    </div>
-
-
-
-                    <div class="project-buttons">
-
-
-                        <a href="resume.pdf"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn primary">
-
-                            VIEW RESUME
-
-                            <span>
-                                ↗
-                            </span>
-
-                        </a>
-
-
-                    </div>
-
+                    <span class="coming-soon">
+                        COMING SOON
+                    </span>
 
                 </div>
 
-
             </article>
-
 
         </div>
 
@@ -1609,248 +808,440 @@
 
 
 <!-- =====================================================
-     EXPERIENCE
+     SKILLS
 ===================================================== -->
 
-<section id="experience"
-         class="section experience-section">
-
+<section id="skills"
+         class="section">
 
     <div class="container">
 
+        <div class="section-heading reveal">
 
-        <div class="section-header reveal">
+            <p class="small-title">
+                MY SKILLS
+            </p>
+
+            <h2>
+                What I
+                <span>know</span>
+            </h2>
+
+        </div>
 
 
-            <span class="section-number">
-                04
-            </span>
+        <div class="skills-grid">
 
 
-            <div>
+            <div class="skill reveal">
 
-                <p>
-                    MY JOURNEY
-                </p>
+                <div class="skill-header">
 
-                <h2>
+                    <span>
+                        HTML
+                    </span>
 
-                    Experience &
-                    <span>learning</span>
+                    <span>
+                        90%
+                    </span>
 
-                </h2>
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="90%">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill reveal">
+
+                <div class="skill-header">
+
+                    <span>
+                        CSS
+                    </span>
+
+                    <span>
+                        85%
+                    </span>
+
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="85%">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill reveal">
+
+                <div class="skill-header">
+
+                    <span>
+                        JavaScript
+                    </span>
+
+                    <span>
+                        75%
+                    </span>
+
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="75%">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill reveal">
+
+                <div class="skill-header">
+
+                    <span>
+                        Python
+                    </span>
+
+                    <span>
+                        70%
+                    </span>
+
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="70%">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill reveal">
+
+                <div class="skill-header">
+
+                    <span>
+                        Linux
+                    </span>
+
+                    <span>
+                        70%
+                    </span>
+
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="70%">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill reveal">
+
+                <div class="skill-header">
+
+                    <span>
+                        Cybersecurity
+                    </span>
+
+                    <span>
+                        65%
+                    </span>
+
+                </div>
+
+                <div class="skill-bar">
+
+                    <div class="skill-progress"
+                         data-width="65%">
+                    </div>
+
+                </div>
 
             </div>
 
         </div>
 
+    </div>
+
+</section>
 
 
-        <div class="experience-timeline">
+
+<!-- =====================================================
+     BLOG
+===================================================== -->
+
+<section id="blog"
+         class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="small-title">
+                MY BLOG
+            </p>
+
+            <h2>
+                Latest
+                <span>stories</span>
+            </h2>
+
+        </div>
 
 
-            <!-- EXPERIENCE 01 -->
+        <div class="blog-controls reveal">
 
-            <div class="experience-item reveal">
+            <button class="filter-btn active"
+                    data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="life">
+                Life
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="tech">
+                Technology
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="travel">
+                Travel
+            </button>
+
+        </div>
 
 
-                <div class="experience-marker">
+        <div class="blog-grid">
 
-                    <span></span>
+
+            <article class="blog-card reveal"
+                     data-category="tech">
+
+                <div class="blog-image">
+
+                    <img src="images/project1.jpg"
+                         alt="Technology">
 
                 </div>
 
 
-                <div class="experience-date">
+                <div class="blog-content">
 
-                    2025 — PRESENT
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <span class="experience-type">
-
-                        EDUCATION
-
+                    <span class="blog-category">
+                        TECHNOLOGY
                     </span>
 
-
                     <h3>
-
-                        Cybersecurity Student
-
+                        How I Started Learning Web Development
                     </h3>
 
-
                     <p>
-
-                        Currently pursuing B.E
-                        Cyber Security at SRM
-                        Valliammai Engineering
-                        College and exploring
-                        cybersecurity, programming,
-                        networking, Linux and
-                        web technologies.
-
+                        My experience learning HTML,
+                        CSS and JavaScript.
                     </p>
 
 
-                    <div class="experience-tags">
-
-
-                        <span>
-                            Cybersecurity
-                        </span>
-
+                    <div class="blog-footer">
 
                         <span>
-                            Python
+                            Aug 2026
                         </span>
 
-
-                        <span>
-                            Linux
-                        </span>
-
+                        <button class="read-btn">
+                            Read →
+                        </button>
 
                     </div>
 
+                </div>
+
+            </article>
+
+
+
+            <article class="blog-card reveal"
+                     data-category="life">
+
+                <div class="blog-image">
+
+                    <img src="images/travel1.jpg"
+                         alt="Life">
 
                 </div>
 
 
-            </div>
+                <div class="blog-content">
 
-
-
-            <!-- EXPERIENCE 02 -->
-
-            <div class="experience-item reveal">
-
-
-                <div class="experience-marker">
-
-                    <span></span>
-
-                </div>
-
-
-                <div class="experience-date">
-
-                    2026
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <span class="experience-type">
-
-                        DEVELOPMENT
-
+                    <span class="blog-category">
+                        LIFE
                     </span>
 
-
                     <h3>
-
-                        Web Development
-
+                        My College Journey
                     </h3>
 
-
                     <p>
-
-                        Started building real
-                        websites and learning
-                        modern frontend development
-                        through personal projects.
-
+                        Things I've learned from college
+                        and my experiences.
                     </p>
 
 
-                    <div class="experience-tags">
-
-
-                        <span>
-                            HTML
-                        </span>
-
+                    <div class="blog-footer">
 
                         <span>
-                            CSS
+                            Aug 2026
                         </span>
 
-
-                        <span>
-                            JavaScript
-                        </span>
-
+                        <button class="read-btn">
+                            Read →
+                        </button>
 
                     </div>
 
+                </div>
+
+            </article>
+
+
+
+            <article class="blog-card reveal"
+                     data-category="travel">
+
+                <div class="blog-image">
+
+                    <img src="images/travel2.jpg"
+                         alt="Travel">
 
                 </div>
 
 
-            </div>
+                <div class="blog-content">
 
-
-
-            <!-- EXPERIENCE 03 -->
-
-            <div class="experience-item reveal">
-
-
-                <div class="experience-marker">
-
-                    <span></span>
-
-                </div>
-
-
-                <div class="experience-date">
-
-                    FUTURE
-
-                </div>
-
-
-                <div class="experience-content">
-
-
-                    <span class="experience-type">
-
-                        NEXT CHAPTER
-
+                    <span class="blog-category">
+                        TRAVEL
                     </span>
 
-
                     <h3>
-
-                        More to come...
-
+                        A Journey I'll Remember
                     </h3>
 
-
                     <p>
-
-                        This timeline will grow
-                        as I gain experience,
-                        complete projects and
-                        learn new technologies.
-
+                        A story about one of my
+                        memorable trips.
                     </p>
 
 
+                    <div class="blog-footer">
+
+                        <span>
+                            Aug 2026
+                        </span>
+
+                        <button class="read-btn">
+                            Read →
+                        </button>
+
+                    </div>
+
                 </div>
 
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section id="gallery"
+         class="section">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="small-title">
+                GALLERY
+            </p>
+
+            <h2>
+                Moments &
+                <span>memories</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid reveal">
+
+            <div class="gallery-item">
+
+                <img src="images/travel1.jpg"
+                     alt="Memory">
 
             </div>
 
+
+            <div class="gallery-item">
+
+                <img src="images/travel2.jpg"
+                     alt="Memory">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="images/project1.jpg"
+                     alt="Project">
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img src="images/project2.jpg"
+                     alt="Project">
+
+            </div>
 
         </div>
 
@@ -1865,154 +1256,77 @@
 ===================================================== -->
 
 <section id="contact"
-         class="section contact-section">
-
+         class="section">
 
     <div class="container">
 
+        <div class="contact-box reveal">
 
-        <div class="contact-wrapper reveal">
+            <div class="contact-text">
 
-
-            <!-- CONTACT INFO -->
-
-            <div class="contact-left">
-
-
-                <span class="section-number">
-
-                    05
-
-                </span>
-
-
-                <p class="eyebrow">
-
-                    HAVE AN IDEA?
-
+                <p class="small-title">
+                    GET IN TOUCH
                 </p>
-
 
                 <h2>
-
-                    Let's build
-                    something
-                    <span>great.</span>
-
+                    Let's connect<span>.</span>
                 </h2>
 
-
                 <p>
-
-                    Whether it's a project,
-                    collaboration or just
-                    a conversation — feel free
-                    to reach out.
-
+                    Have a project idea, question or
+                    just want to say hello?
                 </p>
 
 
-                <a href="mailto:YOUR-EMAIL@gmail.com"
-                   class="email-link">
+                <div class="contact-links">
 
-                    YOUR-EMAIL@gmail.com
+                    <a href="mailto:yourmail@gmail.com">
+                        📧 yourmail@gmail.com
+                    </a>
 
-                    <span>
-                        ↗
-                    </span>
+                    <a href="#">
+                        💻 GitHub
+                    </a>
 
-                </a>
+                    <a href="#">
+                        💼 LinkedIn
+                    </a>
 
+                    <a href="#">
+                        📸 Instagram
+                    </a>
+
+                </div>
 
             </div>
 
 
+            <form id="contactForm"
+                  class="contact-form">
 
-            <!-- CONTACT FORM -->
+                <input type="text"
+                       id="name"
+                       placeholder="Your Name"
+                       required>
 
-            <form
-                action="https://formspree.io/f/YOUR_FORMSPREE_ID"
-                method="POST"
-                class="contact-form"
-            >
+                <input type="email"
+                       id="email"
+                       placeholder="Your Email"
+                       required>
 
+                <textarea id="message"
+                          rows="6"
+                          placeholder="Your Message"
+                          required></textarea>
 
-                <div class="input-group">
+                <button type="submit"
+                        class="primary-btn">
 
-
-                    <label>
-                        NAME
-                    </label>
-
-
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                    >
-
-
-                </div>
-
-
-
-                <div class="input-group">
-
-
-                    <label>
-                        EMAIL
-                    </label>
-
-
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="your@email.com"
-                        required
-                    >
-
-
-                </div>
-
-
-
-                <div class="input-group">
-
-
-                    <label>
-                        MESSAGE
-                    </label>
-
-
-                    <textarea
-                        name="message"
-                        rows="5"
-                        placeholder="Tell me about your idea..."
-                        required
-                    ></textarea>
-
-
-                </div>
-
-
-
-                <button
-                    type="submit"
-                    class="submit-btn"
-                >
-
-                    SEND MESSAGE
-
-                    <span>
-                        ↗
-                    </span>
+                    Send Message →
 
                 </button>
 
-
             </form>
-
 
         </div>
 
@@ -2028,90 +1342,55 @@
 
 <footer>
 
+    <div class="footer-container">
 
-    <div class="footer-main">
+        <div>
 
+            <h3>
+                D<span>.</span>
+            </h3>
 
-        <div class="footer-logo">
-
-            Dinesh<span>.</span>
-
-        </div>
-
-
-        <p>
-
-            Designed & built by Dinesh.
-
-        </p>
-
-
-        <div class="footer-links">
-
-
-            <a href="#home">
-                Home
-            </a>
-
-
-            <a href="#about">
-                About
-            </a>
-
-
-            <a href="#education">
-                Education
-            </a>
-
-
-            <a href="#projects">
-                Projects
-            </a>
-
-
-            <a href="#contact">
-                Contact
-            </a>
-
+            <p>
+                Building my journey,
+                one experience at a time.
+            </p>
 
         </div>
 
 
-    </div>
+        <div class="footer-social">
 
+            <a href="#">
+                GitHub
+            </a>
 
+            <a href="#">
+                LinkedIn
+            </a>
 
-    <div class="footer-bottom">
+            <a href="#">
+                Instagram
+            </a>
 
-
-        <span>
-
-            © 2026 Dinesh
-
-        </span>
-
-
-        <span>
-
-            KEEP BUILDING.
-
-        </span>
-
+        </div>
 
     </div>
 
+
+    <div class="copyright">
+
+        © <span id="year"></span>
+        Dinesh.
+        All rights reserved.
+
+    </div>
 
 </footer>
 
 
 
-<!-- =====================================================
-     BACK TO TOP
-===================================================== -->
-
 <button id="backTop"
-        class="back-top"
-        aria-label="Back to top">
+        class="back-top">
 
     ↑
 
@@ -2119,10 +1398,7 @@
 
 
 
-<!-- JAVASCRIPT -->
-
 <script src="script.js"></script>
-
 
 </body>
 
