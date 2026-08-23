@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Dᵢₙₑₛₕ | Cybersecurity Student | Developer">
+
+    <title>Dᵢₙₑₛₕ — Portfolio</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     LOADING SCREEN
+===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+        Dᵢₙₑₛₕ<span>.</span>
+    </div>
+
+    <div class="loader-line">
+        <span></span>
+    </div>
+
+    <p>
+        INITIALIZING PORTFOLIO...
+    </p>
+
+</div>
+
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="background">
+
+    <div class="noise"></div>
+
+    <div class="grid"></div>
+
+    <div class="orb orb-one"></div>
+
+    <div class="orb orb-two"></div>
+
+    <div class="orb orb-three"></div>
+
+    <canvas id="particles"></canvas>
+
+</div>
+
+
+
+<!-- =====================================================
+     CUSTOM CURSOR
+===================================================== -->
+
+<div class="cursor-dot"></div>
+
+<div class="cursor-ring"></div>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <a href="#home"
+           class="logo">
+
+            D<span>.</span>
+
+        </a>
+
+
+        <nav id="navMenu">
+
+            <a href="#home"
+               class="nav-link active">
+
+                Home
+
+            </a>
+
+
+            <a href="#about"
+               class="nav-link">
+
+                About
+
+            </a>
+
+
+            <a href="#skills"
+               class="nav-link">
+
+                Skills
+
+            </a>
+
+
+            <a href="#projects"
+               class="nav-link">
+
+                Projects
+
+            </a>
+
+
+            <a href="#experience"
+               class="nav-link">
+
+                Experience
+
+            </a>
+
+
+            <a href="#contact"
+               class="nav-link">
+
+                Contact
+
+            </a>
+
+        </nav>
+
+
+        <button id="menuBtn"
+                class="menu-btn">
+
+            ☰
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="home"
+         class="hero">
+
+
+    <div class="hero-container">
+
+
+        <div class="hero-left reveal">
+
+
+            <div class="availability">
+
+                <span></span>
+
+                Available for opportunities
+
+            </div>
+
+
+            <p class="eyebrow">
+
+                HELLO, I'M
+
+            </p>
+
+
+            <h1>
+
+                Dinesh
+
+                <span class="gradient-text">
+                    .
+                </span>
+
+            </h1>
+
+
+            <div class="typing-container">
+
+                <span>
+                    I am a
+                </span>
+
+                <span id="typingText">
+                    Cybersecurity Student
+                </span>
+
+            </div>
+
+
+            <p class="hero-description">
+
+                I build digital experiences,
+                explore cybersecurity and
+                document my journey through
+                technology, projects and
+                continuous learning.
+
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a href="#projects"
+                   class="btn primary">
+
+                    Explore Projects
+
+                    <span>↗</span>
+
+                </a>
+
+
+                <a href="#contact"
+                   class="btn secondary">
+
+                    Let's Connect
+
+                </a>
+
+            </div>
+
+
+            <div class="social-row">
+
+                <a href="#"
+                   class="social">
+
+                    GH
+
+                </a>
+
+                <a href="#"
+                   class="social">
+
+                    IN
+
+                </a>
+
+                <a href="#"
+                   class="social">
+
+                    IG
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HERO VISUAL -->
+
+        <div class="hero-right reveal">
+
+
+            <div class="hero-orbit orbit-a"></div>
+
+            <div class="hero-orbit orbit-b"></div>
+
+            <div class="hero-orbit orbit-c"></div>
+
+
+            <div class="profile-container">
+
+
+                <div class="profile-glow"></div>
+
+
+                <div class="profile-image">
+
+                    <img src="images/profile.jpg"
+                         alt="Dinesh">
+
+                </div>
+
+
+                <div class="floating-card card-top">
+
+                    <span>
+                        ⚡
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Currently
+                        </small>
+
+                        <strong>
+                            Learning
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-bottom">
+
+                    <span>
+                        🛡️
+                    </span>
+
+                    <div>
+
+                        <small>
+                            Focus
+                        </small>
+
+                        <strong>
+                            Cyber Security
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- STATS -->
+
+    <div class="hero-stats">
+
+
+        <div class="stat">
+
+            <strong data-count="10">
+                0
+            </strong>
+
+            <span>
+                Projects
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong data-count="8">
+                0
+            </strong>
+
+            <span>
+                Technologies
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong data-count="1">
+                0
+            </strong>
+
+            <span>
+                Year Journey
+            </span>
+
+        </div>
+
+
+        <div class="stat">
+
+            <strong>
+                ∞
+            </strong>
+
+            <span>
+                Curiosity
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="scroll-down">
+
+        <span></span>
+
+        SCROLL TO EXPLORE
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about"
+         class="section">
+
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <span class="section-number">
+                01
+            </span>
+
+            <div>
+
+                <p>
+                    GET TO KNOW ME
+                </p>
+
+                <h2>
+
+                    About
+                    <span>me</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="about-layout">
+
+
+            <div class="about-main reveal">
+
+
+                <span class="quote-mark">
+                    “
+                </span>
+
+
+                <h3>
+
+                    I believe every project
+                    is an opportunity to
+                    <span>learn something new.</span>
+
+                </h3>
+
+
+                <p>
+
+                    I'm a Cybersecurity student
+                    interested in technology,
+                    web development, Linux,
+                    programming and security.
+
+                </p>
+
+
+                <p>
+
+                    I enjoy taking ideas and
+                    turning them into real,
+                    functional projects. This
+                    portfolio is a record of that
+                    journey.
+
+                </p>
+
+
+                <div class="about-line"></div>
+
+
+                <span class="signature">
+                    Dinesh.
+                </span>
+
+            </div>
+
+
+
+            <div class="about-cards">
+
+
+                <div class="glass-card tilt reveal">
+
+                    <div class="card-number">
+                        01
+                    </div>
+
+                    <div class="card-icon">
+                        ◈
+                    </div>
+
+                    <h3>
+                        Cybersecurity
+                    </h3>
+
+                    <p>
+                        Exploring ethical hacking,
+                        networking, Linux and
+                        security concepts.
+                    </p>
+
+                </div>
+
+
+                <div class="glass-card tilt reveal">
+
+                    <div class="card-number">
+                        02
+                    </div>
+
+                    <div class="card-icon">
+                        ◇
+                    </div>
+
+                    <h3>
+                        Development
+                    </h3>
+
+                    <p>
+                        Building responsive websites
+                        and interactive applications.
+                    </p>
+
+                </div>
+
+
+                <div class="glass-card tilt reveal">
+
+                    <div class="card-number">
+                        03
+                    </div>
+
+                    <div class="card-icon">
+                        ◎
+                    </div>
+
+                    <h3>
+                        Problem Solving
+                    </h3>
+
+                    <p>
+                        Learning by experimenting,
+                        breaking things and rebuilding.
+                    </p>
+
+                </div>
+
+
+                <div class="glass-card tilt reveal">
+
+                    <div class="card-number">
+                        04
+                    </div>
+
+                    <div class="card-icon">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Creativity
+                    </h3>
+
+                    <p>
+                        Turning simple ideas into
+                        unique digital experiences.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section id="skills"
+         class="section skills-section">
+
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <span class="section-number">
+                02
+            </span>
+
+            <div>
+
+                <p>
+                    WHAT I WORK WITH
+                </p>
+
+                <h2>
+
+                    My
+                    <span>skills</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="skills-layout">
+
+
+            <!-- SKILL ORBIT -->
+
+            <div class="skill-orbit-area reveal">
+
+
+                <div class="skill-orbit orbit-one"></div>
+
+                <div class="skill-orbit orbit-two"></div>
+
+                <div class="skill-orbit orbit-three"></div>
+
+
+                <div class="skill-center">
+
+                    <span>
+                        TECH
+                    </span>
+
+                    <strong>
+                        STACK
+                    </strong>
+
+                </div>
+
+
+                <div class="skill-icon icon-one">
+                    HTML
+                </div>
+
+                <div class="skill-icon icon-two">
+                    CSS
+                </div>
+
+                <div class="skill-icon icon-three">
+                    JS
+                </div>
+
+                <div class="skill-icon icon-four">
+                    PY
+                </div>
+
+                <div class="skill-icon icon-five">
+                    LINUX
+                </div>
+
+                <div class="skill-icon icon-six">
+                    GIT
+                </div>
+
+
+            </div>
+
+
+
+            <!-- SKILL BARS -->
+
+            <div class="skills-list reveal">
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            HTML / CSS
+                        </span>
+
+                        <span>
+                            90%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="90%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            75%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="75%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            70%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="70%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            Linux
+                        </span>
+
+                        <span>
+                            70%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="70%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            Git / GitHub
+                        </span>
+
+                        <span>
+                            75%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="75%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-info">
+
+                        <span>
+                            Cybersecurity
+                        </span>
+
+                        <span>
+                            65%
+                        </span>
+
+                    </div>
+
+                    <div class="skill-track">
+
+                        <span
+                            data-width="65%">
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section id="projects"
+         class="section">
+
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <span class="section-number">
+                03
+            </span>
+
+            <div>
+
+                <p>
+                    THINGS I'VE BUILT
+                </p>
+
+                <h2>
+
+                    Selected
+                    <span>projects</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="projects">
+
+<!-- PROJECT 01 — MP FRAMES -->
+
+<article class="project reveal">
+
+    <div class="project-image">
+
+        <img
+            src="images/project1.jpg"
+            alt="MP Frames"
+        >
+
+        <div class="project-overlay">
+
+            <a
+                href="https://mp-frames.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-view-btn"
+            >
+                VIEW PROJECT ↗
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="project-info">
+
+
+        <div class="project-meta">
+
+            <span>
+                01 / 2026
+            </span>
+
+            <span>
+                WEB DEVELOPMENT
+            </span>
+
+        </div>
+
+
+        <h3>
+            MP Frames
+        </h3>
+
+
+        <p>
+
+            A complete photo frame
+            e-commerce website with
+            product management,
+            product details, cart,
+            checkout and customer
+            ordering.
+
+        </p>
+
+
+        <div class="tags">
+
+            <span>
+                HTML
+            </span>
+
+            <span>
+                CSS
+            </span>
+
+            <span>
+                JavaScript
+            </span>
+
+            <span>
+                Firebase
+            </span>
+
+            <span>
+                Vercel
+            </span>
+
+        </div>
+
+
+        <!-- PROJECT BUTTONS -->
+
+        <div class="project-buttons">
+
+            <a
+                href="https://mp-frames.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+            >
+                LIVE WEBSITE
+                <span>↗</span>
+            </a>
+
+
+            <!-- Add GitHub link later -->
+
+            <a
+                href="#"
+                class="btn secondary"
+            >
+                GITHUB
+                <span>↗</span>
+            </a>
+
+        </div>
+
+
+    </div>
+
+</article>
+            
+<!-- PROJECT 02 — DINESH FASHION -->
+
+<article class="project reverse reveal">
+
+    <div class="project-image">
+
+        <img
+            src="images/project2.jpg"
+            alt="Dinesh Fashion"
+        >
+
+        <div class="project-overlay">
+
+            <a
+                href="https://dineshh07.github.io/dinesh-fashion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-view-btn"
+            >
+                VIEW PROJECT ↗
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="project-info">
+
+        <div class="project-meta">
+
+            <span>
+                02 / 2026
+            </span>
+
+            <span>
+                WEB DEVELOPMENT
+            </span>
+
+        </div>
+
+
+        <h3>
+            Dinesh Fashion
+        </h3>
+
+
+        <p>
+
+            A fashion e-commerce website with
+            product showcase, search and
+            shopping cart functionality.
+
+        </p>
+
+
+        <div class="tags">
+
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>E-Commerce</span>
+
+        </div>
+
+
+        <!-- ONLY LIVE WEBSITE BUTTON -->
+
+        <div class="project-buttons">
+
+            <a
+                href="https://dineshh07.github.io/dinesh-fashion/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn primary"
+            >
+                LIVE WEBSITE
+                <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+
+            <!-- PROJECT 03 -->
+
+            <article class="project reveal">
+
+
+                <div class="project-image">
+
+                    <img src="images/project3.jpg"
+                         alt="Portfolio">
+
+                    <div class="project-overlay">
+
+                        <span>
+                            VIEW PROJECT ↗
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-info">
+
+
+                    <div class="project-meta">
+
+                        <span>
+                            03 / 2026
+                        </span>
+
+                        <span>
+                            PERSONAL
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        My Portfolio
+                    </h3>
+
+
+                    <p>
+
+                        A futuristic personal portfolio
+                        designed to document my skills,
+                        projects and journey.
+
+                    </p>
+
+
+                    <div class="tags">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EXPERIENCE
+===================================================== -->
+
+<section id="experience"
+         class="section experience-section">
+
+
+    <div class="container">
+
+
+        <div class="section-header reveal">
+
+            <span class="section-number">
+                04
+            </span>
+
+            <div>
+
+                <p>
+                    MY JOURNEY
+                </p>
+
+                <h2>
+
+                    Experience &
+                    <span>learning</span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <div class="experience-timeline">
+
+
+            <div class="experience-item reveal">
+
+
+                <div class="experience-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="experience-date">
+                    2026 — PRESENT
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        EDUCATION
+                    </span>
+
+                    <h3>
+                        Cybersecurity Student
+                    </h3>
+
+                    <p>
+
+                        Currently exploring
+                        cybersecurity, programming,
+                        networking, Linux and
+                        web technologies.
+
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>
+                            Cybersecurity
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            Linux
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="experience-item reveal">
+
+
+                <div class="experience-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="experience-date">
+                    2026
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        DEVELOPMENT
+                    </span>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+
+                        Started building real websites
+                        and learning modern frontend
+                        development.
+
+                    </p>
+
+
+                    <div class="experience-tags">
+
+                        <span>
+                            HTML
+                        </span>
+
+                        <span>
+                            CSS
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="experience-item reveal">
+
+
+                <div class="experience-marker">
+
+                    <span></span>
+
+                </div>
+
+
+                <div class="experience-date">
+                    FUTURE
+                </div>
+
+
+                <div class="experience-content">
+
+                    <span class="experience-type">
+                        NEXT CHAPTER
+                    </span>
+
+                    <h3>
+                        More to come...
+                    </h3>
+
+                    <p>
+
+                        This timeline will grow
+                        as I gain experience,
+                        complete projects and
+                        learn new technologies.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact"
+         class="section contact-section">
+
+
+    <div class="container">
+
+
+        <div class="contact-wrapper reveal">
+
+
+            <div class="contact-left">
+
+
+                <span class="section-number">
+                    05
+                </span>
+
+
+                <p class="eyebrow">
+                    HAVE AN IDEA?
+                </p>
+
+
+                <h2>
+
+                    Let's build
+                    something
+                    <span>great.</span>
+
+                </h2>
+
+
+                <p>
+
+                    Whether it's a project,
+                    collaboration or just
+                    a conversation — feel free
+                    to reach out.
+
+                </p>
+
+
+                <a href="mailto:dinesh10112007r@gmail.com"
+                   class="email-link">
+
+                    dinesh10112007r@gmail.com
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <form id="contactForm"
+                  class="contact-form">
+
+
+                <div class="input-group">
+
+                    <label>
+                        NAME
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        EMAIL
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="dinesh10112007r@gmail.com"
+                        required>
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>
+                        MESSAGE
+                    </label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Tell me about your idea..."
+                        required></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn">
+
+                    SEND MESSAGE
+
+                    <span>
+                        ↗
+                    </span>
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-main">
+
+
+        <div class="footer-logo">
+
+            D<span>.</span>
+
+        </div>
+
+
+        <p>
+
+            Designed & built by Dinesh.
+
+        </p>
+
+
+        <div class="footer-links">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Dinesh
+        </span>
+
+        <span>
+            KEEP BUILDING.
+        </span>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     BACK TO TOP
+===================================================== -->
+
+<button id="backTop"
+        class="back-top">
+
+    ↑
+
+</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
