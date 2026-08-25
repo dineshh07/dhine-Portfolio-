@@ -901,3 +901,66 @@ contactForm.addEventListener(
 
     }
 );
+/* =====================================================
+   MOBILE PERFORMANCE OPTIMIZATION
+===================================================== */
+
+const isMobile =
+    window.matchMedia("(max-width: 768px)").matches;
+
+if (isMobile) {
+
+    /* Disable custom cursor */
+
+    const cursorDot = document.querySelector(".cursor-dot");
+    const cursorRing = document.querySelector(".cursor-ring");
+
+    if (cursorDot) {
+        cursorDot.style.display = "none";
+    }
+
+    if (cursorRing) {
+        cursorRing.style.display = "none";
+    }
+
+
+    /* Disable particle canvas */
+
+    const particleCanvas =
+        document.getElementById("particles");
+
+    if (particleCanvas) {
+        particleCanvas.style.display = "none";
+    }
+
+
+    /* Disable tilt effect */
+
+    document.querySelectorAll(".tilt").forEach(element => {
+
+        element.style.transform = "none";
+
+    });
+
+
+    /* Disable heavy orbit animations */
+
+    document.querySelectorAll(
+        ".hero-orbit, .skill-orbit"
+    ).forEach(element => {
+
+        element.style.animation = "none";
+
+    });
+
+
+    /* Reduce background effects */
+
+    document.querySelectorAll(".orb").forEach(element => {
+
+        element.style.animation = "none";
+        element.style.filter = "blur(70px)";
+
+    });
+
+}
