@@ -2610,3 +2610,72 @@ footer {
     box-shadow:
         0 10px 30px rgba(255,255,255,0.15);
 }
+/* =====================================================
+   MOBILE PERFORMANCE MODE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Disable expensive effects */
+
+    .noise {
+        display: none;
+    }
+
+    .cursor-dot,
+    .cursor-ring {
+        display: none !important;
+    }
+
+    #particles {
+        display: none !important;
+    }
+
+    /* Reduce background */
+
+    .background .grid {
+        opacity: 0.15;
+    }
+
+    .orb {
+        filter: blur(60px) !important;
+        animation: none !important;
+    }
+
+    /* Disable tilt */
+
+    .tilt {
+        transform: none !important;
+        transition: none !important;
+    }
+
+    /* Reduce glass effects */
+
+    .glass-card {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    /* Reduce animations */
+
+    .hero-orbit,
+    .skill-orbit {
+        animation: none !important;
+    }
+
+    /* Images */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
