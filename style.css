@@ -2679,3 +2679,47 @@ footer {
     }
 
 }
+/* =========================================
+   MOBILE SPEED MODE
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Hide particle animation */
+    #particles {
+        display: none !important;
+    }
+
+    /* Hide custom cursor */
+    .cursor-dot,
+    .cursor-ring {
+        display: none !important;
+    }
+
+    /* Stop background animations */
+    .orb,
+    .hero-orbit,
+    .skill-orbit {
+        animation: none !important;
+    }
+
+    /* Reduce expensive blur */
+    .orb {
+        filter: blur(40px) !important;
+        opacity: 0.2 !important;
+    }
+
+    /* Disable 3D tilt */
+    .tilt {
+        transform: none !important;
+    }
+
+    /* Remove expensive glass blur on mobile */
+    .glass-card,
+    .floating-card,
+    .contact-wrapper {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+}
