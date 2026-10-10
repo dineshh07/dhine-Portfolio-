@@ -3977,3 +3977,15 @@ footer {
         gap: 8px !important;
     }
 }
+.two-column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+}
+
+#certificates,
+#experience {
+    width: 100%;
+    max-width: 100%;
+}
